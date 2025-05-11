@@ -9,13 +9,15 @@ import Settings from "./pages/Settings";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import HomePage from "./pages/HomePage";
 
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/tasks" element={<Tasks />} />
         <Route path="/task/:id" element={<TaskDetails />} />
         <Route path="/teams" element={<Teams />} />

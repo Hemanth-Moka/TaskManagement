@@ -1,18 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../Styles/Navbar.css";
+import { Link } from "react-router-dom"; // Use Link for navigation
+import "../Styles/Navbar.css"; // Include any required styles
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <ul>
-        <li><Link to="/">Dashboard</Link></li>
-        <li><Link to="/tasks">Tasks</Link></li>
-        <li><Link to="/teams">Teams</Link></li>
-        <li><Link to="/calendar">Calendar</Link></li>
-        <li><Link to="/reports">Reports</Link></li>
-        <li><Link to="/settings">Settings</Link></li>
-        <li><Link to="/profile">Profile</Link></li>
+        {/* About Link */}
+        <li><Link to="/about">About</Link></li>
+
+        {/* Login Button that links to the Login page */}
+        <li><Link to="/login" className="login-btn">Login</Link></li>
       </ul>
     </nav>
   );

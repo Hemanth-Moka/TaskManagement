@@ -1,0 +1,24 @@
+/* Settings.css */
+.settings-container {
+  padding: 20px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.setting-option {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+  transform: scale(1.2);
+}

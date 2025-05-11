@@ -1,19 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../Styles/Sidebar.css"
+import "../Styles/Sidebar.css"; // Make sure you have your styles
 
-const Sidebar = () => {
+const Sidebar = ({ onClick }) => {
   return (
     <aside>
       <ul>
-        <li><Link to="/">Dashboard</Link></li>
-        <li><Link to="/tasks">Tasks</Link></li>
-        <li><Link to="/teams">Teams</Link></li>
-        <li><Link to="/calendar">Calendar</Link></li>
-        <li><Link to="/reports">Reports</Link></li>
-        <li><Link to="/settings">Settings</Link></li>
+        <li><button onClick={() => onClick('dashboard')}>Dashboard</button></li> {/* Trigger Dashboard */}
+        <li><button onClick={() => onClick('tasks')}>Tasks</button></li> {/* Trigger Tasks */}
+        <li><button onClick={() => onClick('teams')}>Teams</button></li> {/* Trigger Teams */}
+        <li><button onClick={() => onClick('calendar')}>Calendar</button></li> {/* Trigger Calendar */}
+        <li><button onClick={() => onClick('settings')}>Settings</button></li> {/* Trigger Settings */}
       </ul>
     </aside>
   );
 };
+
 export default Sidebar;
